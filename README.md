@@ -22,3 +22,10 @@ Markov recurrent neural network (MRNN) explore the stochastic transitions in rec
 |<img src="checkpoint/K=8_MLE/stat.png" width="400">|<img src="checkpoint/K=8_VB/stat.png" width="400/">|<img src="checkpoint/K=8_ER_beta=0.001/stat.png" width="400/">|
 |:--------------------------------------------:|:----------------------------------------:|:----------------------------------------:|
 |Maximum likelihood estimation|Variational Bayes|Entropy regularization|
+
+- Statistic of utilized states for one digit and state trajectories
+
+|<img src="checkpoint/K=8_MLE/dist_0.png" width="400">|<img src="checkpoint/K=8_VB/dist_0.png" width="400/">|<img src="checkpoint/K=8_ER_beta=0.001/dist_0.png" width="400/">|
+|:--------------------------------------------:|:----------------------------------------:|:----------------------------------------:|
+|<img src="checkpoint/K=8_MLE/state_0.png" width="400">|<img src="checkpoint/K=8_VB/state_0.png" width="400/">|<img src="checkpoint/K=8_ER_beta=0.001/state_0.png" width="400/">|
+|Maximum likelihood estimation|Variational Bayes|Entropy regularization|
