@@ -1,5 +1,5 @@
-# Markov Recurrent Neural Network for language modeling
-In this project, we implement Markov Recurrent Neural Network (MRNN) for language modeling with Penn Treebank.
+# Markov Recurrent Neural Network for sequential MNIST
+In this project, we implement Markov Recurrent Neural Network (MRNN) for sequential MNIST (row by row).
 
 Markov recurrent neural network (MRNN) explore the stochastic transitions in recurrent neural networks by incorporating the Markov property with discrete random variables. This model was proposed to deal with highly structured sequential data with complicated latent information. The discrete samples are drawn from the parameterized categorical distribution at each time step, and latent information is encoded by different state encoders depends on which state is selected.
 
@@ -14,33 +14,11 @@ Markov recurrent neural network (MRNN) explore the stochastic transitions in rec
 	- GPU: GeForce GTX 1080ti
 - Tensorflow 1.4.1
 - Dataset
-	- Penn Treebank
+	- MNIST
 
 ## Result
-- 2D visualization of hidden state
+- Statistic of utilized states
 
-|<img src="Others/tsne_LSTM.png" width="800">|
-|:--------------------------------------------:|
-|LSTM (K=1)|
-
-
-<img src="Others/tsne_K=2.png" width="400">|<img src="Others/stat_K=2.png" width="400/">
-:--------------------------------------------:|:----------------------------------------:
-MRNN K=2|Statistic of states
-
-
-<img src="Others/tsne_K=4.png" width="400">|<img src="Others/stat_K=4.png" width="400/">
-:--------------------------------------------:|:----------------------------------------:
-MRNN K=4|Statistic of states
-
-<img src="Others/tsne_K=8.png" width="400">|<img src="Others/stat_K=8.png" width="400/">
-:--------------------------------------------:|:----------------------------------------:
-MRNN K=8|Statistic of states
-
-<img src="Others/tsne_K=12.png" width="400">|<img src="Others/stat_K=12.png" width="400/">
-:--------------------------------------------:|:----------------------------------------:
-MRNN K=12|Statistic of states
-
-<img src="Others/tsne_K=16.png" width="400">|<img src="Others/stat_K=16.png" width="400/">
-:--------------------------------------------:|:----------------------------------------:
-MRNN K=16|Statistic of states
+|<img src="checkpoint/K=8_MLE/stat.png" width="400">|<img src="checkpoint/K=8_VB/stat.png" width="400/">|<img src="checkpoint/K=8_ER_beta=0.001/stat.png" width="400/">|
+|:--------------------------------------------:|:----------------------------------------:|:----------------------------------------:|
+|Maximum likelihood estimation|Variational Bayes|Entropy regularization|
